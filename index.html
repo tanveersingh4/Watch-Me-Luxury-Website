@@ -1,0 +1,1755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Watch Me — Haute Horlogerie. Explore deconstructed engineering, flying tourbillons, and hand-finished 18K gold calibres crafted in Geneva.">
+  <title>Watch Me — Haute Horlogerie & Deconstructed Calibres</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Film Grain Overlay -->
+  <div class="grain-overlay" aria-hidden="true"></div>
+
+  <!-- ==========================================================================
+       SITE HEADER — FLOATING BEZEL ISLAND
+       ========================================================================== -->
+  <header class="site-header">
+    <nav class="nav-island" aria-label="Main Navigation">
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-link" id="brandLogo">
+        <div class="brand-title">Watch <span>Me</span></div>
+      </a>
+
+      <!-- Desktop Links -->
+      <ul class="nav-links">
+        <li class="nav-item"><a href="#calibre">Calibres</a></li>
+        <li class="nav-item"><a href="#exploded">Exploded View</a></li>
+        <li class="nav-item"><a href="#atelier">Atelier</a></li>
+        <li class="nav-item"><a href="#heritage">Heritage</a></li>
+        <li class="nav-item"><a href="#configurator">Configurator</a></li>
+      </ul>
+
+      <!-- Nav Actions -->
+      <div class="nav-actions">
+        <!-- Escapement Audio Synthesizer Toggle -->
+        <button class="sound-toggle-btn" id="soundToggle" type="button" aria-label="Toggle mechanical watch escapement sound">
+          <div class="sound-wave-bars">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <span id="soundLabel">TICK: OFF</span>
+        </button>
+
+        <a href="#acquire" class="nav-cta-btn" id="navAcquireBtn">Acquire</a>
+
+        <!-- Mobile Trigger -->
+        <button class="mobile-menu-trigger" id="mobileMenuBtn" aria-label="Open Navigation Menu" type="button">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+            <line x1="4" y1="8" x2="20" y2="8"></line>
+            <line x1="4" y1="16" x2="20" y2="16"></line>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <aside class="mobile-nav-drawer" id="mobileDrawer" aria-hidden="true">
+    <button class="mobile-close-btn" id="mobileCloseBtn" aria-label="Close navigation menu" type="button">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round">
+        <line x1="18" y1="6" x2="6" y2="18"></line>
+        <line x1="6" y1="6" x2="18" y2="18"></line>
+      </svg>
+    </button>
+    <ul class="mobile-nav-list">
+      <li><a href="#calibre" class="mobile-link">Calibres</a></li>
+      <li><a href="#exploded" class="mobile-link">Exploded View</a></li>
+      <li><a href="#atelier" class="mobile-link">Atelier</a></li>
+      <li><a href="#heritage" class="mobile-link">Heritage</a></li>
+      <li><a href="#configurator" class="mobile-link">Configurator</a></li>
+      <li><a href="#acquire" class="mobile-link">Acquire Timepiece</a></li>
+      <li style="margin-top: 0.75rem; padding-top: 0.5rem; border-top: 1px solid rgba(255,255,255,0.08);">
+        <button class="sound-toggle-btn" id="soundToggleMobile" type="button" aria-label="Toggle mechanical watch escapement sound" style="width: 100%; justify-content: center; padding: 0.7rem 1rem;">
+          <div class="sound-wave-bars">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <span id="soundLabelMobile">TICK: OFF</span>
+        </button>
+      </li>
+    </ul>
+    <div class="mobile-nav-footer">
+      <a href="#acquire" class="btn-primary" style="justify-content: center; width: 100%;">
+        <span>Acquire Timepiece</span>
+      </a>
+      <div style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-dim); text-align: center;">
+        GENÈVE · LE BRASSUS · TOKYO · NEW YORK
+      </div>
+    </div>
+  </aside>
+
+  <main>
+    <!-- ==========================================================================
+         SECTION 1: HERO SECTION — CINEMATIC DECONSTRUCTED GOLD WATCH STAGE
+         ========================================================================== -->
+    <section class="hero-section" id="heroSection">
+      
+      <!-- Video Background Stage -->
+      <div class="hero-media-wrapper">
+        <video 
+          id="watchVideo" 
+          class="hero-video" 
+          autoplay 
+          muted 
+          loop 
+          playsinline 
+          preload="auto"
+          aria-label="Gold watch exploded 3D mechanism animation">
+          <source src="assets/Gold_watch_animation_exploded_view_20260925151519.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        
+        <!-- Scrim Gradient & Dark Vignette -->
+        <div class="hero-overlay-scrim" aria-hidden="true"></div>
+        <div class="hero-ambient-glow" aria-hidden="true"></div>
+      </div>
+
+      <!-- Hero Main Content -->
+      <div class="hero-container">
+        
+        <!-- Copy & Call To Actions -->
+        <div class="hero-text-block">
+          <!-- Strict Eyebrow 1 of 3 (Taste Skill Discipline) -->
+          <div class="hero-eyebrow">
+            <span class="eyebrow-indicator"></span>
+            <span>Calibre No. 01 · Tourbillon Deconstructed</span>
+          </div>
+
+          <h1 class="hero-headline">
+            The Architecture of <span class="text-gold-gradient">Time.</span>
+          </h1>
+
+          <!-- Strict Subtext (Under 20 words limit: Exactly 15 words) -->
+          <p class="hero-subtext">
+            Witness 342 hand-finished gold components suspended in mechanical harmony. Precision engineered for eternal rhythm.
+          </p>
+
+          <!-- CTA Buttons with Button-in-Button Architecture -->
+          <div class="hero-cta-group">
+            <a href="#acquire" class="btn-primary" id="primaryCtaBtn">
+              <span>Acquire Timepiece</span>
+              <div class="btn-icon-bubble" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="7" y1="17" x2="17" y2="7"></line>
+                  <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+              </div>
+            </a>
+
+            <button type="button" class="btn-secondary" id="secondaryCtaBtn">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+              <span>Pause & Inspect</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 2: THE CALIBRE COLLECTION — ASYMMETRICAL BENTO & INTERACTIVE SPECIMENS
+         (No eyebrow here — rule: max 1 eyebrow per 3 sections)
+         ========================================================================== -->
+    <section class="section-padding bg-void relative" id="calibre">
+      <div class="section-container">
+        
+        <!-- Section Header: Stacked Headline & Context -->
+        <div class="section-header reveal-on-scroll">
+          <h2 class="section-title">
+            The Calibre <span class="text-gold-gradient">Collection</span>
+          </h2>
+          <p class="section-desc">
+            Three distinct architectural movements engineered in the Vallée de Joux, deconstructed to celebrate mechanical transparency and chronological supremacy.
+          </p>
+        </div>
+
+        <!-- Calibre Switcher Tabs -->
+        <div class="calibre-tabs-wrapper reveal-on-scroll">
+          <div class="calibre-tab-bezel">
+            <button class="calibre-tab-btn is-active" data-calibre="wm01" type="button">
+              <span class="tab-code">CALIBRE WM-01</span>
+              <span class="tab-name">Tourbillon Squelette</span>
+            </button>
+            <button class="calibre-tab-btn" data-calibre="wm02" type="button">
+              <span class="tab-code">CALIBRE WM-02</span>
+              <span class="tab-name">Celestial Astronomic</span>
+            </button>
+            <button class="calibre-tab-btn" data-calibre="wm03" type="button">
+              <span class="tab-code">CALIBRE WM-03</span>
+              <span class="tab-name">Monopusher Chrono</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Asymmetrical Bento Matrix (Dynamic based on selected Calibre) -->
+        <div class="bento-grid mt-8 reveal-on-scroll" id="calibreBento">
+          
+          <!-- Bento Cell 1: Large Featured Movement Macro (Hero Card) -->
+          <div class="bento-card bento-hero-macro double-bezel-card">
+            <div class="bezel-inner relative overflow-hidden">
+              <img 
+                src="assets/calibre_v2_tourbillon.jpg" 
+                alt="Calibre WM-01 Flying Tourbillon Movement Macro in 18K Honey Gold" 
+                class="bento-img" 
+                id="calibreMainImg">
+              <div class="bento-gradient-scrim"></div>
+              
+              <div class="bento-card-content">
+                <div class="bento-meta-pill" id="calibreMetaPill">Flying Tourbillon · 18K Solid Honeygold</div>
+                <h3 class="bento-hero-title" id="calibreHeroTitle">Calibre WM-01 Squelette</h3>
+                <p class="bento-hero-desc" id="calibreHeroDesc">
+                  Openworked architecture revealing the breathing escapement, titanium cage, and hand-chamfered bridges polished with traditional boxwood paste.
+                </p>
+                <div class="bento-spec-strip">
+                  <div class="strip-item">
+                    <span class="strip-val" id="specValParts">342</span>
+                    <span class="strip-lbl">Parts</span>
+                  </div>
+                  <div class="strip-item">
+                    <span class="strip-val" id="specValHz">4 Hz</span>
+                    <span class="strip-lbl">28,800 VPH</span>
+                  </div>
+                  <div class="strip-item">
+                    <span class="strip-val" id="specValReserve">72 H</span>
+                    <span class="strip-lbl">Power Reserve</span>
+                  </div>
+                  <div class="strip-item">
+                    <span class="strip-val" id="specValJewels">52</span>
+                    <span class="strip-lbl">Rubies</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bento Cell 2: Technical Metallurgy & Material Profile -->
+          <div class="bento-card bento-tall double-bezel-card">
+            <div class="bezel-inner p-6 flex flex-col justify-between">
+              <div>
+                <div class="card-icon-bubble">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                    <polyline points="2 17 12 22 22 17"></polyline>
+                    <polyline points="2 12 12 17 22 12"></polyline>
+                  </svg>
+                </div>
+                <div class="bento-sub-tag">Metallurgy</div>
+                <h4 class="bento-sub-title" id="calibreMetalTitle">18K Honeygold Alloy</h4>
+                <p class="bento-sub-text" id="calibreMetalDesc">
+                  Proprietary gold formulation infused with copper and platinum for higher Vickers hardness (300 HV) and timeless warm luster that never fades.
+                </p>
+              </div>
+
+              <div class="alloy-meter-list">
+                <div class="alloy-item">
+                  <div class="alloy-labels">
+                    <span>Pure Gold (75%)</span>
+                    <span>750‰</span>
+                  </div>
+                  <div class="alloy-bar"><span style="width: 75%;"></span></div>
+                </div>
+                <div class="alloy-item">
+                  <div class="alloy-labels">
+                    <span>Platinum Matrix</span>
+                    <span>160‰</span>
+                  </div>
+                  <div class="alloy-bar"><span style="width: 45%;"></span></div>
+                </div>
+                <div class="alloy-item">
+                  <div class="alloy-labels">
+                    <span>Thermal Stabilizer</span>
+                    <span>90‰</span>
+                  </div>
+                  <div class="alloy-bar"><span style="width: 25%;"></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bento Cell 3: Secondary Aesthetic & Case Pairing -->
+          <div class="bento-card bento-wide double-bezel-card">
+            <div class="bezel-inner relative overflow-hidden">
+              <img 
+                src="assets/calibre_v2_chrono.jpg" 
+                alt="Haute Horlogerie timepiece movement with hand-beveled chronograph levers" 
+                class="bento-img" 
+                id="calibreSecondaryImg">
+              <div class="bento-gradient-scrim"></div>
+              
+              <div class="bento-card-content">
+                <div class="bento-sub-tag">Casing & Geometries</div>
+                <h4 class="bento-sub-title">41mm Monobloc Architecture</h4>
+                <p class="bento-sub-text max-w-lg">
+                  Water resistant to 50 meters with screw-down sapphire exhibition caseback and integrated lugs crafted to drape seamlessly across the wrist.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bento Cell 4: Chronometric Certification & Guarantee -->
+          <div class="bento-card bento-compact double-bezel-card">
+            <div class="bezel-inner p-6 flex flex-col justify-between">
+              <div>
+                <div class="cert-stamp">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <circle cx="12" cy="8" r="7"></circle>
+                    <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                  </svg>
+                  <span>COSC & Poinçon de Genève</span>
+                </div>
+                <div class="bento-sub-tag mt-4">Precision Standard</div>
+                <h4 class="bento-sub-title">-2 / +2 Sec Daily</h4>
+                <p class="bento-sub-text">
+                  Tested in 5 positions over 360 hours under extreme thermal fluctuation (-5°C to +45°C).
+                </p>
+              </div>
+              <div class="cert-footer">
+                <span>10-Year Global Warranty</span>
+                <span class="text-gold-400">Manufacture Genève</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 3: EXPLODED MECHANICAL ANATOMY — INTERACTIVE COMPONENT MATRIX
+         (No eyebrow here — rule: max 1 eyebrow per 3 sections)
+         ========================================================================== -->
+    <section class="section-padding bg-surface relative" id="exploded">
+      <div class="section-container">
+        
+        <div class="section-header reveal-on-scroll">
+          <h2 class="section-title">
+            Deconstructed <span class="text-gold-gradient">Architecture</span>
+          </h2>
+          <p class="section-desc">
+            Explore the four critical horological modules that constitute the heartbeat of our calibres. Select any component below to inspect micro-tolerances and CAD parameters.
+          </p>
+        </div>
+
+        <!-- Interactive Module Grid -->
+        <div class="modules-grid reveal-on-scroll">
+          
+          <!-- Module 1: Gyromax Balance -->
+          <div class="module-card is-active double-bezel-card" data-module="0" role="button" tabindex="0">
+            <div class="bezel-inner p-6">
+              <div class="module-num">01 / OSCILLATOR</div>
+              <h3 class="module-title">Free-Sprung Gyromax</h3>
+              <p class="module-desc">
+                Variable inertia balance wheel with gold poise adjustment collets, eliminating regulator curb pins for uncompromised isochronism.
+              </p>
+              <div class="module-telemetry">
+                <div class="tel-item">
+                  <span class="tel-key">Tolerance</span>
+                  <span class="tel-val">±0.001 mm</span>
+                </div>
+                <div class="tel-item">
+                  <span class="tel-key">Material</span>
+                  <span class="tel-val">Glucydur Gold</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Module 2: Escapement -->
+          <div class="module-card double-bezel-card" data-module="1" role="button" tabindex="0">
+            <div class="bezel-inner p-6">
+              <div class="module-num">02 / IMPULSE</div>
+              <h3 class="module-title">Silicon & Ruby Escapement</h3>
+              <p class="module-desc">
+                Anti-magnetic monocrystalline silicon escapement wheel paired with bevelled synthetic ruby pallets. Requires zero liquid lubrication.
+              </p>
+              <div class="module-telemetry">
+                <div class="tel-item">
+                  <span class="tel-key">Friction</span>
+                  <span class="tel-val">0.02 µk</span>
+                </div>
+                <div class="tel-item">
+                  <span class="tel-key">Pallets</span>
+                  <span class="tel-val">Grade A Corundum</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Module 3: Power Reserve -->
+          <div class="module-card double-bezel-card" data-module="2" role="button" tabindex="0">
+            <div class="bezel-inner p-6">
+              <div class="module-num">03 / TORQUE</div>
+              <h3 class="module-title">Twin Co-Axial Barrels</h3>
+              <p class="module-desc">
+                Dual mainspring barrels coupled in series to deliver a linear, constant torque curve across all 72 hours of autonomy.
+              </p>
+              <div class="module-telemetry">
+                <div class="tel-item">
+                  <span class="tel-key">Spring Alloy</span>
+                  <span class="tel-val">Nivaflex NM</span>
+                </div>
+                <div class="tel-item">
+                  <span class="tel-key">Rotational Drag</span>
+                  <span class="tel-val">Zero Backlash</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Module 4: Crystal & Optics -->
+          <div class="module-card double-bezel-card" data-module="3" role="button" tabindex="0">
+            <div class="bezel-inner p-6">
+              <div class="module-num">04 / OPTICS</div>
+              <h3 class="module-title">Box Sapphire Glass</h3>
+              <p class="module-desc">
+                Cambered corundum crystal with 7-layer anti-reflective vapor deposition on both sides, ensuring zero refraction distortion from any angle.
+              </p>
+              <div class="module-telemetry">
+                <div class="tel-item">
+                  <span class="tel-key">Hardness</span>
+                  <span class="tel-val">9 Mohs (1800 HV)</span>
+                </div>
+                <div class="tel-item">
+                  <span class="tel-key">Clarity</span>
+                  <span class="tel-val">99.8% Transmittance</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Dynamic Module Blueprint Inspector Panel -->
+        <div class="module-inspector-bezel mt-8 reveal-on-scroll">
+          <div class="inspector-inner">
+            <div class="inspector-grid">
+              <div class="inspector-visual">
+                <div class="cad-crosshair"></div>
+                <div class="cad-code" id="cadCode">CAD_ID: WM-OSC-GYRO-01</div>
+                <div class="inspector-status-badge">LIVE CAD TELEMETRY</div>
+                <div class="inspector-graphic">
+                  <svg viewBox="0 0 100 100" class="rotating-cad-gear">
+                    <circle cx="50" cy="50" r="42" fill="none" stroke="rgba(212, 175, 55, 0.4)" stroke-dasharray="4 3"/>
+                    <circle cx="50" cy="50" r="30" fill="none" stroke="rgba(212, 175, 55, 0.8)" stroke-width="1.5"/>
+                    <circle cx="50" cy="50" r="8" fill="var(--gold-500)"/>
+                    <line x1="50" y1="8" x2="50" y2="92" stroke="rgba(212, 175, 55, 0.5)"/>
+                    <line x1="8" y1="50" x2="92" y2="50" stroke="rgba(212, 175, 55, 0.5)"/>
+                    <circle cx="50" cy="20" r="3" fill="#fff"/>
+                    <circle cx="50" cy="80" r="3" fill="#fff"/>
+                    <circle cx="20" cy="50" r="3" fill="#fff"/>
+                    <circle cx="80" cy="50" r="3" fill="#fff"/>
+                  </svg>
+                </div>
+              </div>
+
+              <div class="inspector-data">
+                <div class="inspector-tag" id="inspectTag">MODULE 01 TELEMETRY</div>
+                <h4 class="inspector-headline" id="inspectHeadline">Free-Sprung Gyromax Balance Dynamic Rig</h4>
+                <p class="inspector-body" id="inspectBody">
+                  The oscillation frequency is sustained at 28,800 vibrations per hour. Four adjustable eccentric gold weights seated along the rim allow micrometric regulation without touching the active length of the balance spring.
+                </p>
+                <div class="inspector-metrics">
+                  <div class="metric-box">
+                    <span class="metric-num" id="metric1">28,800</span>
+                    <span class="metric-lbl" id="metricLbl1">Oscillations / Hr</span>
+                  </div>
+                  <div class="metric-box">
+                    <span class="metric-num" id="metric2">±0.001mm</span>
+                    <span class="metric-lbl" id="metricLbl2">Poise Accuracy</span>
+                  </div>
+                  <div class="metric-box">
+                    <span class="metric-num" id="metric3">300°</span>
+                    <span class="metric-lbl" id="metricLbl3">Optimal Amplitude</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 4: THE ATELIER & MÉTIERS D’ART — SPLIT-SCREEN CRAFT NARRATIVE
+         (Strict Eyebrow 2 of 3)
+         ========================================================================== -->
+    <section class="section-padding bg-void relative" id="atelier">
+      <div class="section-container">
+        
+        <div class="atelier-split-layout">
+          
+          <!-- Left: Narrative & Interactive Finishes -->
+          <div class="atelier-copy-column reveal-on-scroll">
+            <div class="hero-eyebrow">
+              <span class="eyebrow-indicator"></span>
+              <span>Vallée de Joux · Haute Finition</span>
+            </div>
+
+            <h2 class="section-title">
+              The Hands Behind <span class="text-gold-gradient">The Rhythm.</span>
+            </h2>
+
+            <p class="section-desc mb-3">
+              At our manufacture in Le Brassus, no machine can replicate the soul of manual decoration. Each bridge, screw, and wheel undergoes over 40 hours of hand-anglage by master artisans using century-old gentian wood and diamond pastes.
+            </p>
+
+            <!-- Finishing Techniques Selector -->
+            <div class="finishing-selector-cluster">
+              <button class="finish-btn is-active" data-finish="anglage" type="button">
+                <div class="finish-btn-top">
+                  <span class="finish-num font-mono">01</span>
+                  <span class="finish-tool">Gentian Wood</span>
+                </div>
+                <span class="finish-name">Anglage à la Main</span>
+              </button>
+              <button class="finish-btn" data-finish="polinoir" type="button">
+                <div class="finish-btn-top">
+                  <span class="finish-num font-mono">02</span>
+                  <span class="finish-tool">Zinc Specular Plate</span>
+                </div>
+                <span class="finish-name">Poli Noir (Black Polish)</span>
+              </button>
+              <button class="finish-btn" data-finish="cotes" type="button">
+                <div class="finish-btn-top">
+                  <span class="finish-num font-mono">03</span>
+                  <span class="finish-tool">Boxwood Disc</span>
+                </div>
+                <span class="finish-name">Côtes de Genève</span>
+              </button>
+              <button class="finish-btn" data-finish="perlage" type="button">
+                <div class="finish-btn-top">
+                  <span class="finish-num font-mono">04</span>
+                  <span class="finish-tool">Abrasive Dowel</span>
+                </div>
+                <span class="finish-name">Perlage Graining</span>
+              </button>
+            </div>
+
+            <!-- Dynamic Finish Description Card -->
+            <div class="finish-detail-box double-bezel-card mt-3">
+              <div class="bezel-inner p-4">
+                <div class="finish-header-bar">
+                  <span class="finish-code font-mono" id="finishCode">TECHNIQUE 01 / 04</span>
+                  <span class="finish-tag font-mono text-gold-400" id="finishTag">CHAMFERING & CONVEX RADII</span>
+                </div>
+                <h4 class="finish-title" id="finishTitle">Anglage à la Main (Hand Chamfering)</h4>
+                <p class="finish-desc" id="finishDesc">
+                  The edges of each bridge are hand-filed to a precise 45-degree angle, followed by progressive smoothing with emery paper and polishing with wood sticks soaked in diamond paste to achieve a flawless mirror curve with sharp interior angles.
+                </p>
+                <div class="finish-metrics-grid mt-4">
+                  <div class="finish-metric-cell">
+                    <span class="f-metric-val text-gold-300 font-mono" id="finishMetric1">42 Hours</span>
+                    <span class="f-metric-lbl" id="finishMetricLbl1">Hand-Labor Per Movement</span>
+                  </div>
+                  <div class="finish-metric-cell">
+                    <span class="f-metric-val text-gold-300 font-mono" id="finishMetric2">Gentian Wood</span>
+                    <span class="f-metric-lbl" id="finishMetricLbl2">Finishing Medium</span>
+                  </div>
+                  <div class="finish-metric-cell">
+                    <span class="f-metric-val text-gold-300 font-mono" id="finishMetric3">±0.001 mm</span>
+                    <span class="f-metric-lbl" id="finishMetricLbl3">Reflection Tolerance</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Right: Visual Masterpiece Frame -->
+          <div class="atelier-visual-column reveal-on-scroll">
+            <div class="atelier-frame-bezel double-bezel-card">
+              <div class="bezel-inner relative overflow-hidden">
+                <img 
+                  src="assets/finish_anglage.jpg" 
+                  alt="Master watchmaker hand-polishing chamfered gold watch bridge" 
+                  class="atelier-img" 
+                  id="atelierMainImg">
+                <div class="atelier-scrim"></div>
+                
+                <!-- Top Status Bar -->
+                <div class="atelier-top-bar">
+                  <div class="atelier-live-pill">
+                    <span class="live-dot pulse-gold"></span>
+                    <span id="atelierBenchName">BENCH 01 · ANGLAGE ÉTABLI</span>
+                  </div>
+                  <div class="atelier-geo-pill font-mono">
+                    46.5828° N, 6.2084° E · LE BRASSUS
+                  </div>
+                </div>
+
+                <!-- Bottom Artisan Dossier -->
+                <div class="atelier-overlay-badge">
+                  <div class="artisan-stamp">
+                    <div class="artisan-header-row">
+                      <span class="artisan-name" id="artisanName">M. Laurent Gauthier</span>
+                      <span class="poincon-tag" id="artisanSeal">POINÇON DE GENÈVE</span>
+                    </div>
+                    <span class="artisan-role" id="artisanRole">Maître Horloger · Anglage à la Main</span>
+                    <div class="artisan-micro-specs font-mono">
+                      <span id="artisanSpec1">SPECIALTY: 45° INTERNAL CHAMFERS</span>
+                      <span id="artisanSpec2">TOLERANCE: ±0.001 MM</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 5: HERITAGE CHRONOLOGY — STAGGERED VERTICAL HORIZON
+         (No eyebrow here — rule: max 1 eyebrow per 3 sections)
+         ========================================================================== -->
+    <section class="section-padding bg-surface relative" id="heritage">
+      <div class="section-container">
+        
+        <div class="section-header reveal-on-scroll">
+          <h2 class="section-title">
+            A Century of <span class="text-gold-gradient">Chronometry</span>
+          </h2>
+          <p class="section-desc">
+            From an independent cabinotier workshop in 1898 to the contemporary pioneers of openworked horological sculpture.
+          </p>
+        </div>
+
+        <div class="timeline-horizon reveal-on-scroll">
+          <div class="timeline-spine" aria-hidden="true"></div>
+
+          <!-- Milestone 1 -->
+          <div class="timeline-row">
+            <div class="timeline-marker">
+              <span>1898</span>
+            </div>
+            <div class="timeline-card double-bezel-card">
+              <div class="bezel-inner p-6">
+                <div class="timeline-loc">Le Brassus, Vallée de Joux</div>
+                <h3 class="timeline-heading">Founding of the Atelier</h3>
+                <p class="timeline-copy">
+                  Master watchmaker Jean-Pierre Meuron establishes his independent workshop, specializing in pocket watch escapements and split-second flyback chronographs for royal observatories.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Milestone 2 -->
+          <div class="timeline-row is-reversed">
+            <div class="timeline-marker">
+              <span>1934</span>
+            </div>
+            <div class="timeline-card double-bezel-card">
+              <div class="bezel-inner p-6">
+                <div class="timeline-loc">Geneva Observatory</div>
+                <h3 class="timeline-heading">The Constant-Force Invention</h3>
+                <p class="timeline-copy">
+                  Awarded the First Class Grand Prix at the Geneva Concours de Chronométrie for inventing a patented spring-barrel shock damper that stabilized isochronism during severe altitude shifts.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Milestone 3 -->
+          <div class="timeline-row">
+            <div class="timeline-marker">
+              <span>1971</span>
+            </div>
+            <div class="timeline-card double-bezel-card">
+              <div class="bezel-inner p-6">
+                <div class="timeline-loc">Basel World Fair</div>
+                <h3 class="timeline-heading">The Monobloc Honeygold Case</h3>
+                <p class="timeline-copy">
+                  Defying the quartz crisis, the manufacture unveiled its first solid 18K honeygold integrated sports timepiece, validating mechanical mastery as timeless wearable art.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Milestone 4 -->
+          <div class="timeline-row is-reversed">
+            <div class="timeline-marker">
+              <span>2026</span>
+            </div>
+            <div class="timeline-card double-bezel-card">
+              <div class="bezel-inner p-6">
+                <div class="timeline-loc">Geneva Watch Week</div>
+                <h3 class="timeline-heading">The Deconstructed Epoch</h3>
+                <p class="timeline-copy">
+                  Launch of the Flying Tourbillon Squelette No. 01 — completely openworked architecture with zero dial obstruction, uniting historical hand-finishing with Grade 5 titanium kinetic cages.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 6: BESPOKE CONFIGURATOR — TACTILE LIVE HOROLOGY BUILDER
+         (No eyebrow here — rule: max 1 eyebrow per 3 sections)
+         ========================================================================== -->
+    <section class="section-padding bg-void relative" id="configurator">
+      <div class="section-container">
+        
+        <div class="section-header reveal-on-scroll">
+          <h2 class="section-title">
+            Bespoke Horology <span class="text-gold-gradient">Studio</span>
+          </h2>
+          <p class="section-desc">
+            Personalize your bespoke commission. Select case metallurgy, dial finish, and handcrafted strap to visualize your singular heirloom.
+          </p>
+        </div>
+
+        <div class="configurator-stage reveal-on-scroll">
+          
+          <!-- Left: Live Showcase Display -->
+          <div class="config-display double-bezel-card">
+            <div class="bezel-inner relative overflow-hidden flex flex-col items-center justify-center p-8">
+              <div class="config-stage-glow"></div>
+              
+              <!-- Active Watch Visual -->
+              <div class="config-watch-frame">
+                <img 
+                  src="assets/calibre_celestial.jpg" 
+                  alt="Configured custom luxury gold timepiece" 
+                  class="config-main-img" 
+                  id="configWatchImg">
+              </div>
+
+              <!-- Live Configuration Badges -->
+              <div class="config-live-tags">
+                <span class="live-pill" id="liveMetalPill">18K Honeygold</span>
+                <span class="live-pill" id="liveDialPill">Celestial Meteorite</span>
+                <span class="live-pill" id="liveStrapPill">Alligator Leather</span>
+              </div>
+
+              <div class="config-stage-footer">
+                <div class="config-weight">Estimated Net Weight: <span id="configWeight">164 g</span></div>
+                <div class="config-serial">Case Engraving: <span id="configEngravePreview">“NO. 19 / 50”</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Option Selectors -->
+          <div class="config-panel double-bezel-card">
+            <div class="bezel-inner p-8 flex flex-col justify-between">
+              
+              <div class="config-groups">
+                
+                <!-- Group 1: Case Alloy -->
+                <div class="config-group">
+                  <div class="config-group-header">
+                    <span class="config-group-num">01</span>
+                    <span class="config-group-name">Case Metallurgy</span>
+                  </div>
+                  <div class="config-options-grid">
+                    <button class="config-opt-btn is-selected" data-type="metal" data-val="honeygold" data-price="94000" data-weight="164" type="button">
+                      <span class="opt-swatch swatch-honeygold"></span>
+                      <span class="opt-title">18K Honeygold</span>
+                      <span class="opt-delta">Standard</span>
+                    </button>
+                    <button class="config-opt-btn" data-type="metal" data-val="titanium" data-price="88000" data-weight="122" type="button">
+                      <span class="opt-swatch swatch-titanium"></span>
+                      <span class="opt-title">DLC Titanium</span>
+                      <span class="opt-delta">-CHF 6,000</span>
+                    </button>
+                    <button class="config-opt-btn" data-type="metal" data-val="platinum" data-price="128000" data-weight="198" type="button">
+                      <span class="opt-swatch swatch-platinum"></span>
+                      <span class="opt-title">Platinum 950</span>
+                      <span class="opt-delta">+CHF 34,000</span>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Group 2: Dial Architecture -->
+                <div class="config-group mt-6">
+                  <div class="config-group-header">
+                    <span class="config-group-num">02</span>
+                    <span class="config-group-name">Dial Architecture</span>
+                  </div>
+                  <div class="config-options-grid">
+                    <button class="config-opt-btn" data-type="dial" data-val="skeleton" data-price="0" data-img="assets/watch_obsidian.jpg" type="button">
+                      <span class="opt-swatch swatch-skeleton"></span>
+                      <span class="opt-title">Openworked Skeleton</span>
+                      <span class="opt-delta">Included</span>
+                    </button>
+                    <button class="config-opt-btn is-selected" data-type="dial" data-val="meteorite" data-price="12000" data-img="assets/calibre_celestial.jpg" type="button">
+                      <span class="opt-swatch swatch-meteorite"></span>
+                      <span class="opt-title">Gibeon Meteorite</span>
+                      <span class="opt-delta">+CHF 12,000</span>
+                    </button>
+                    <button class="config-opt-btn" data-type="dial" data-val="aventurine" data-price="8500" data-img="assets/calibre_tourbillon.jpg" type="button">
+                      <span class="opt-swatch swatch-aventurine"></span>
+                      <span class="opt-title">Aventurine Glass</span>
+                      <span class="opt-delta">+CHF 8,500</span>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Group 3: Strap & Buckle -->
+                <div class="config-group mt-6">
+                  <div class="config-group-header">
+                    <span class="config-group-num">03</span>
+                    <span class="config-group-name">Strap & Buckle</span>
+                  </div>
+                  <div class="config-options-grid">
+                    <button class="config-opt-btn is-selected" data-type="strap" data-val="alligator" data-price="0" type="button">
+                      <span class="opt-swatch swatch-alligator"></span>
+                      <span class="opt-title">Louisiana Alligator</span>
+                      <span class="opt-delta">Included</span>
+                    </button>
+                    <button class="config-opt-btn" data-type="strap" data-val="bracelet" data-price="16000" type="button">
+                      <span class="opt-swatch swatch-bracelet"></span>
+                      <span class="opt-title">Matching Gold Link</span>
+                      <span class="opt-delta">+CHF 16,000</span>
+                    </button>
+                    <button class="config-opt-btn" data-type="strap" data-val="rubber" data-price="1200" type="button">
+                      <span class="opt-swatch swatch-rubber"></span>
+                      <span class="opt-title">Vulcanized FKM</span>
+                      <span class="opt-delta">+CHF 1,200</span>
+                    </button>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Price & Allocation Action Bar -->
+              <div class="config-summary-bar mt-8">
+                <div class="config-price-block">
+                  <span class="price-label">Manufacture Price</span>
+                  <div class="price-val" id="configTotalPrice">CHF 106,000</div>
+                  <span class="price-tax">Includes Swiss VAT, insured international shipping & 10-year warranty</span>
+                </div>
+
+                <a href="#acquire" class="btn-primary" id="configBookBtn">
+                  <span>Reserve Configuration</span>
+                  <div class="btn-icon-bubble" aria-hidden="true">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                      <line x1="7" y1="17" x2="17" y2="7"></line>
+                      <polyline points="7 7 17 7 17 17"></polyline>
+                    </svg>
+                  </div>
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECTION 7: PRIVATE CLIENT ALLOCATION & CONCIERGE PROTOCOL
+         (Strict Eyebrow 3 of 3)
+         ========================================================================== -->
+    <section class="section-padding bg-surface relative" id="acquire">
+      <div class="section-container">
+        
+        <div class="section-header reveal-on-scroll">
+          <div class="hero-eyebrow">
+            <span class="eyebrow-indicator"></span>
+            <span>Private Client Allocation</span>
+          </div>
+          <h2 class="section-title">
+            Acquire Your <span class="text-gold-gradient">Timepiece</span>
+          </h2>
+          <p class="section-desc">
+            Due to our annual production cap of 50 pieces per calibre, allocations are reviewed directly by the Master Watchmaker. Please register your acquisition intent.
+          </p>
+        </div>
+
+        <div class="concierge-wrapper reveal-on-scroll">
+          <div class="concierge-card double-bezel-card">
+            <div class="bezel-inner p-8 md:p-12">
+              
+              <form id="conciergeForm" class="concierge-form" onsubmit="return false;">
+                
+                <div class="form-grid">
+                  <!-- Name -->
+                  <div class="form-group">
+                    <label for="clientName" class="form-label">Full Name & Title</label>
+                    <input type="text" id="clientName" name="clientName" class="form-input" placeholder="e.g. Lord James Hamilton" required>
+                  </div>
+
+                  <!-- Email -->
+                  <div class="form-group">
+                    <label for="clientEmail" class="form-label">Private Email Address</label>
+                    <input type="email" id="clientEmail" name="clientEmail" class="form-input" placeholder="client@domain.com" required>
+                  </div>
+
+                  <!-- Phone / WhatsApp -->
+                  <div class="form-group">
+                    <label for="clientPhone" class="form-label">Telephone / Concierge Liaison</label>
+                    <input type="tel" id="clientPhone" name="clientPhone" class="form-input" placeholder="+41 22 555 0192" required>
+                  </div>
+
+                  <!-- Preferred Salon -->
+                  <div class="form-group">
+                    <label for="salonLocation" class="form-label">Preferred Appointment Salon</label>
+                    <select id="salonLocation" name="salonLocation" class="form-input">
+                      <option value="geneva">Geneva Manufacture — Rue du Rhône</option>
+                      <option value="london">London Salon — Mayfair</option>
+                      <option value="tokyo">Tokyo Atelier — Ginza 6</option>
+                      <option value="newyork">New York Salon — Madison Avenue</option>
+                      <option value="private-delivery">Private Jet Concierge Delivery (Worldwide)</option>
+                    </select>
+                  </div>
+
+                  <!-- Calibre of Interest -->
+                  <div class="form-group">
+                    <label for="calibreSelection" class="form-label">Desired Calibre</label>
+                    <select id="calibreSelection" name="calibreSelection" class="form-input">
+                      <option value="wm01">Calibre WM-01 Tourbillon Squelette (CHF 94,000)</option>
+                      <option value="wm02">Calibre WM-02 Celestial Astronomic (CHF 106,000)</option>
+                      <option value="wm03">Calibre WM-03 Monopusher Chrono (CHF 118,000)</option>
+                    </select>
+                  </div>
+
+                  <!-- Edition Serial Request -->
+                  <div class="form-group">
+                    <label for="serialPreference" class="form-label">Preferred Serial Allocation (1 to 50)</label>
+                    <input type="text" id="serialPreference" name="serialPreference" class="form-input" placeholder="e.g. Serial #07 / 50 or Birthday Year">
+                  </div>
+                </div>
+
+                <!-- Custom Bespoke Engraving / Notes -->
+                <div class="form-group mt-6">
+                  <label for="clientNotes" class="form-label">Bespoke Engraving & Special Requests</label>
+                  <textarea id="clientNotes" name="clientNotes" class="form-input form-textarea" rows="3" placeholder="Specify custom caseback inscription, wrist circumference (in mm), or private viewing dates..."></textarea>
+                </div>
+
+                <!-- Submit Action -->
+                <div class="form-actions mt-8">
+                  <button type="submit" class="btn-primary" id="submitConciergeBtn" style="padding-left: 2rem; padding-right: 0.6rem;">
+                    <span>Submit Private Allocation Request</span>
+                    <div class="btn-icon-bubble" aria-hidden="true">
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                      </svg>
+                    </div>
+                  </button>
+                  <div class="form-security-note">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                      <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                      <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                    </svg>
+                    <span>Strict Confidentiality · 256-Bit Encrypted Concierge Protocol</span>
+                  </div>
+                </div>
+
+              </form>
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Allocation Confirmation Modal -->
+  <div class="modal-backdrop" id="allocationModal" aria-hidden="true">
+    <div class="modal-card double-bezel-card">
+      <div class="bezel-inner p-8 text-center">
+        <div class="modal-icon-circle">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+        </div>
+        <div class="modal-tag">Allocation Request Logged</div>
+        <h3 class="modal-title font-serif">Protocol Initiated</h3>
+        <p class="modal-desc" id="modalConfirmationMsg">
+          Thank you, esteemed client. Your allocation dossier has been forwarded to our Geneva Salon Director. A private liaison will contact you within 4 hours.
+        </p>
+        <div class="modal-dossier-code" id="dossierCode">DOSSIER REF: WM-2026-9812-CH</div>
+        <button class="btn-primary mt-6 mx-auto" id="closeModalBtn" type="button" style="padding-left: 2rem; padding-right: 0.6rem;">
+          <span>Return to Showcase</span>
+          <div class="btn-icon-bubble">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       ARCHITECTURAL HOROLOGY FOOTER WITH LIVE WORLD CLOCKS
+       ========================================================================== -->
+  <footer class="site-footer">
+    
+    <!-- World Horology Chronometer Clocks Strip -->
+    <div class="footer-clocks-strip">
+      <div class="clocks-container">
+        
+        <div class="clock-pod">
+          <div class="clock-city">GENÈVE (MANUFACTURE)</div>
+          <div class="clock-time font-mono" id="clockGeneva">--:--:-- CET</div>
+          <div class="clock-status">SALON OPEN</div>
+        </div>
+
+        <div class="clock-pod">
+          <div class="clock-city">LONDON (MAYFAIR)</div>
+          <div class="clock-time font-mono" id="clockLondon">--:--:-- GMT</div>
+          <div class="clock-status">SALON OPEN</div>
+        </div>
+
+        <div class="clock-pod">
+          <div class="clock-city">NEW YORK (MADISON)</div>
+          <div class="clock-time font-mono" id="clockNewYork">--:--:-- EST</div>
+          <div class="clock-status">BY APPOINTMENT</div>
+        </div>
+
+        <div class="clock-pod">
+          <div class="clock-city">TOKYO (GINZA)</div>
+          <div class="clock-time font-mono" id="clockTokyo">--:--:-- JST</div>
+          <div class="clock-status">EVENING ATELIER</div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Main Footer Body -->
+    <div class="footer-main-container">
+      <div class="footer-top-grid">
+        
+        <!-- Col 1: Brand & Manifesto -->
+        <div class="footer-col brand-col">
+          <a href="index.html" class="brand-link mb-4">
+            <div class="brand-title">Watch <span>Me</span></div>
+          </a>
+          <p class="footer-brand-text">
+            Independent Swiss Haute Horlogerie dedicated to openworked calibres, architectural gold geometries, and zero-compromise mechanical finishings.
+          </p>
+          <div class="footer-cert-badges">
+            <span class="cert-pill">POINÇON DE GENÈVE</span>
+            <span class="cert-pill">COSC CHRONOMETER</span>
+            <span class="cert-pill">SWISS MADE 750</span>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation Links -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#calibre">Calibre Collection</a></li>
+            <li><a href="#exploded">Exploded Anatomy</a></li>
+            <li><a href="#atelier">The Geneva Atelier</a></li>
+            <li><a href="#heritage">Heritage Timeline</a></li>
+            <li><a href="#configurator">Bespoke Studio</a></li>
+            <li><a href="#acquire">Private Allocation</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Technical Specifications -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">Horology Standards</h4>
+          <ul class="footer-links">
+            <li><a href="#exploded">Flying Tourbillon Escapement</a></li>
+            <li><a href="#calibre">18K Honeygold Formulation</a></li>
+            <li><a href="#atelier">Poli Noir Hand-Finishing</a></li>
+            <li><a href="#exploded">Free-Sprung Gyromax System</a></li>
+            <li><a href="#exploded">Box Sapphire Crystal Deposition</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Private Gazette / Inquiries -->
+        <div class="footer-col">
+          <h4 class="footer-col-title">The Horological Gazette</h4>
+          <p class="footer-col-text">
+            Receive private monograph bulletins and early allocation privileges prior to public salon exhibitions.
+          </p>
+          <form class="footer-newsletter-form" onsubmit="event.preventDefault(); alert('You are registered for the Private Horological Gazette.');">
+            <input type="email" placeholder="Your private email..." class="footer-input" required>
+            <button type="submit" class="footer-sub-btn" aria-label="Subscribe to Gazette">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </button>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <div class="footer-copyright font-mono">
+          © 2026 WATCH ME HAUTE HORLOGERIE S.A. ALL RIGHTS RESERVED. MANUFACTURE EN SUISSE.
+        </div>
+        <div class="footer-legal-links font-mono">
+          <a href="#">CONFIDENTIALITY</a>
+          <a href="#">TRACEABILITY</a>
+          <a href="#">CONCIERGE CIPHER</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Real Mechanical Horology Audio Element -->
+  <audio id="clockAudio" loop preload="auto" src="assets/clock_ticking.mp3">
+    <source src="assets/clock_ticking.mp3" type="audio/mpeg">
+    <source src="assets/mechanical_ticking.mp3" type="audio/mpeg">
+    <source src="assets/clock_ticking.ogg" type="audio/ogg">
+    <source src="assets/mechanical_ticking.ogg" type="audio/ogg">
+  </audio>
+
+  <!-- ==========================================================================
+       COMPLETE JAVASCRIPT SYSTEM
+       Video Controller, Real Horology Audio, Bento Switcher, Configurator, Clocks
+       ========================================================================== -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. VIDEO HERO CONTROLLER
+      const video = document.getElementById('watchVideo');
+      const secondaryCtaBtn = document.getElementById('secondaryCtaBtn');
+      const hotspotPins = document.querySelectorAll('.hotspot-pin');
+
+      if (video && secondaryCtaBtn) {
+        secondaryCtaBtn.addEventListener('click', () => {
+          if (video.paused) {
+            video.play().catch(e => console.log(e));
+            secondaryCtaBtn.querySelector('span').textContent = 'Pause & Inspect';
+          } else {
+            video.pause();
+            secondaryCtaBtn.querySelector('span').textContent = 'Resume Calibre';
+          }
+        });
+
+        hotspotPins.forEach(pin => {
+          pin.addEventListener('click', () => {
+            const targetTime = parseFloat(pin.dataset.time);
+            if (targetTime && video.duration) {
+              video.currentTime = Math.min(targetTime, video.duration);
+              if (!video.paused) video.pause();
+              secondaryCtaBtn.querySelector('span').textContent = 'Resume Calibre';
+            }
+          });
+        });
+      }
+
+      // 2. MOBILE MENU DRAWER
+      const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+      const mobileCloseBtn = document.getElementById('mobileCloseBtn');
+      const mobileDrawer = document.getElementById('mobileDrawer');
+      const mobileLinks = document.querySelectorAll('.mobile-link');
+
+      const openDrawer = () => {
+        mobileDrawer.classList.add('is-open');
+        mobileDrawer.setAttribute('aria-hidden', 'false');
+      };
+      const closeDrawer = () => {
+        mobileDrawer.classList.remove('is-open');
+        mobileDrawer.setAttribute('aria-hidden', 'true');
+      };
+
+      mobileMenuBtn.addEventListener('click', openDrawer);
+      mobileCloseBtn.addEventListener('click', closeDrawer);
+      mobileLinks.forEach(link => link.addEventListener('click', closeDrawer));
+
+      // 3. BULLETPROOF MECHANICAL HOROLOGY AUDIO SYSTEM (DIRECT HTML5 + SYNTHESIZED ESCAPEMENT ENGINE)
+      const soundToggle = document.getElementById('soundToggle');
+      const soundLabel = document.getElementById('soundLabel');
+      const soundToggleMobile = document.getElementById('soundToggleMobile');
+      const soundLabelMobile = document.getElementById('soundLabelMobile');
+      const clockAudio = document.getElementById('clockAudio');
+
+      let isAudioPlaying = false;
+      let synthInterval = null;
+      let audioCtx = null;
+      let tickAlternator = false;
+
+      // Realistic procedural watch escapement sound (Pure WebAudio, 100% immune to CORS or file:// restrictions)
+      const playSynthesizedEscapementTick = () => {
+        try {
+          if (!audioCtx) {
+            const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+            audioCtx = new AudioContextClass();
+          }
+          if (audioCtx.state === 'suspended') {
+            audioCtx.resume();
+          }
+
+          const now = audioCtx.currentTime;
+          tickAlternator = !tickAlternator;
+
+          // 1. Pallet Jewel Impact Transient (High-frequency metallic ping)
+          const osc = audioCtx.createOscillator();
+          const oscGain = audioCtx.createGain();
+          const f0 = tickAlternator ? 3500 : 2850;
+          osc.type = 'sine';
+          osc.frequency.setValueAtTime(f0, now);
+          osc.frequency.exponentialRampToValueAtTime(f0 * 0.3, now + 0.024);
+
+          oscGain.gain.setValueAtTime(0.4, now);
+          oscGain.gain.exponentialRampToValueAtTime(0.0001, now + 0.024);
+
+          osc.connect(oscGain);
+          oscGain.connect(audioCtx.destination);
+          osc.start(now);
+          osc.stop(now + 0.028);
+
+          // 2. Escape Wheel Tooth Mechanical Click (Bandpass filtered noise impulse)
+          const frameCount = Math.floor(audioCtx.sampleRate * 0.015);
+          const noiseBuffer = audioCtx.createBuffer(1, frameCount, audioCtx.sampleRate);
+          const channel = noiseBuffer.getChannelData(0);
+          for (let i = 0; i < frameCount; i++) {
+            channel[i] = (Math.random() * 2 - 1) * Math.exp(-i / (frameCount * 0.28));
+          }
+          const noiseSrc = audioCtx.createBufferSource();
+          noiseSrc.buffer = noiseBuffer;
+
+          const bpFilter = audioCtx.createBiquadFilter();
+          bpFilter.type = 'bandpass';
+          bpFilter.frequency.setValueAtTime(tickAlternator ? 4600 : 3800, now);
+          bpFilter.Q.setValueAtTime(5.5, now);
+
+          const noiseGain = audioCtx.createGain();
+          noiseGain.gain.setValueAtTime(0.35, now);
+          noiseGain.gain.exponentialRampToValueAtTime(0.0001, now + 0.018);
+
+          noiseSrc.connect(bpFilter);
+          bpFilter.connect(noiseGain);
+          noiseGain.connect(audioCtx.destination);
+
+          noiseSrc.start(now);
+          noiseSrc.stop(now + 0.022);
+        } catch (e) {
+          console.warn('Synthesized escapement tick error:', e);
+        }
+      };
+
+      const startSynthTicking = () => {
+        if (synthInterval) clearInterval(synthInterval);
+        playSynthesizedEscapementTick();
+        // Calibrated 2 beats per second (500ms intervals = classic watch movement cadence)
+        synthInterval = setInterval(playSynthesizedEscapementTick, 500);
+      };
+
+      const stopSynthTicking = () => {
+        if (synthInterval) {
+          clearInterval(synthInterval);
+          synthInterval = null;
+        }
+      };
+
+      const setSoundActiveUI = (active) => {
+        isAudioPlaying = active;
+        const text = active ? 'TICK: ON' : 'TICK: OFF';
+        [soundToggle, soundToggleMobile].forEach(btn => {
+          if (!btn) return;
+          if (active) {
+            btn.classList.add('is-active');
+          } else {
+            btn.classList.remove('is-active');
+          }
+        });
+        if (soundLabel) soundLabel.textContent = text;
+        if (soundLabelMobile) soundLabelMobile.textContent = text;
+      };
+
+      const toggleSound = async () => {
+        if (isAudioPlaying) {
+          // Turn sound OFF
+          if (clockAudio) {
+            try {
+              clockAudio.pause();
+              clockAudio.currentTime = 0;
+            } catch (err) {}
+          }
+          stopSynthTicking();
+          setSoundActiveUI(false);
+        } else {
+          // Turn sound ON
+          setSoundActiveUI(true);
+
+          let html5AudioStarted = false;
+
+          // Attempt 1: Direct HTML5 Native Audio playback (Zero CORS issues, works on file:// & localhost)
+          if (clockAudio) {
+            try {
+              clockAudio.volume = 1.0;
+              clockAudio.playbackRate = 1.0;
+              const p = clockAudio.play();
+              if (p !== undefined) {
+                await p;
+                html5AudioStarted = !clockAudio.paused;
+              }
+            } catch (playErr) {
+              console.warn('HTML5 clock audio play rejected, switching to procedural synth:', playErr);
+            }
+          }
+
+          // Attempt 2: If HTML5 audio did not start, is muted, or failed, run Procedural Escapement Synth
+          if (!html5AudioStarted || !clockAudio || clockAudio.paused) {
+            startSynthTicking();
+          }
+        }
+      };
+
+      if (soundToggle) {
+        soundToggle.addEventListener('click', toggleSound);
+      }
+      if (soundToggleMobile) {
+        soundToggleMobile.addEventListener('click', toggleSound);
+      }
+
+      // Handle audio errors on clockAudio element gracefully
+      if (clockAudio) {
+        clockAudio.addEventListener('error', () => {
+          console.warn('Clock audio element encountered load/decode error. Procedural synthesizer active.');
+          if (isAudioPlaying && !synthInterval) {
+            startSynthTicking();
+          }
+        });
+      }
+
+      // 4. CALIBRE COLLECTION SWITCHER
+      const calibreData = {
+        wm01: {
+          title: "Calibre WM-01 Squelette",
+          pill: "Flying Tourbillon · 18K Solid Honeygold",
+          desc: "Openworked architecture revealing the breathing escapement, titanium cage, and hand-chamfered bridges polished with traditional boxwood paste.",
+          img: "assets/calibre_v2_tourbillon.jpg",
+          parts: "342",
+          hz: "4 Hz",
+          reserve: "72 H",
+          jewels: "52",
+          metalTitle: "18K Honeygold Alloy",
+          metalDesc: "Proprietary gold formulation infused with copper and platinum for higher Vickers hardness (300 HV) and timeless warm luster that never fades."
+        },
+        wm02: {
+          title: "Calibre WM-02 Celestial Astronomic",
+          pill: "Astronomical Moonphase · Gibeon Meteorite Dial",
+          desc: "Integrates a precision 122-year spherical moonphase indicator, deep blue aventurine cosmos disc, and genuine extraterrestrial Widmanstätten meteorite grain.",
+          img: "assets/calibre_v2_celestial.jpg",
+          parts: "418",
+          hz: "3.5 Hz",
+          reserve: "65 H",
+          jewels: "58",
+          metalTitle: "Gibeon Meteorite & 18K Rose Matrix",
+          metalDesc: "Sourced from ancient pre-historic iron-nickel meteorites exhibiting natural 4-billion-year crystalline Widmanstätten patterns."
+        },
+        wm03: {
+          title: "Calibre WM-03 Monopusher Chrono",
+          pill: "Column Wheel Flyback · Grade 5 Titanium",
+          desc: "Single coaxial crown-pusher orchestrating start, stop, and instant zero-reset with instantaneous 30-minute jumping counter and vertical clutch engagement.",
+          img: "assets/calibre_v2_chrono.jpg",
+          parts: "386",
+          hz: "5 Hz",
+          reserve: "60 H",
+          jewels: "49",
+          metalTitle: "Grade 5 Titanium & Honeygold",
+          metalDesc: "Micro-blasted titanium bridges combined with solid gold train wheels for minimum inertia and lightning acceleration."
+        }
+      };
+
+      const calibreTabBtns = document.querySelectorAll('.calibre-tab-btn');
+      const calibreMainImg = document.getElementById('calibreMainImg');
+      const calibreMetaPill = document.getElementById('calibreMetaPill');
+      const calibreHeroTitle = document.getElementById('calibreHeroTitle');
+      const calibreHeroDesc = document.getElementById('calibreHeroDesc');
+      const specValParts = document.getElementById('specValParts');
+      const specValHz = document.getElementById('specValHz');
+      const specValReserve = document.getElementById('specValReserve');
+      const specValJewels = document.getElementById('specValJewels');
+      const calibreMetalTitle = document.getElementById('calibreMetalTitle');
+      const calibreMetalDesc = document.getElementById('calibreMetalDesc');
+
+      calibreTabBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          calibreTabBtns.forEach(b => b.classList.remove('is-active'));
+          btn.classList.add('is-active');
+
+          const calKey = btn.dataset.calibre;
+          const data = calibreData[calKey];
+          if (!data) return;
+
+          calibreMainImg.style.opacity = '0.3';
+          setTimeout(() => {
+            calibreMainImg.src = data.img;
+            calibreMainImg.style.opacity = '1';
+          }, 180);
+
+          calibreMetaPill.textContent = data.pill;
+          calibreHeroTitle.textContent = data.title;
+          calibreHeroDesc.textContent = data.desc;
+          specValParts.textContent = data.parts;
+          specValHz.textContent = data.hz;
+          specValReserve.textContent = data.reserve;
+          specValJewels.textContent = data.jewels;
+          calibreMetalTitle.textContent = data.metalTitle;
+          calibreMetalDesc.textContent = data.metalDesc;
+        });
+      });
+
+      // 5. EXPLODED ANATOMY INSPECTOR
+      const moduleData = [
+        {
+          cadId: "CAD_ID: WM-OSC-GYRO-01",
+          tag: "MODULE 01 TELEMETRY",
+          headline: "Free-Sprung Gyromax Balance Dynamic Rig",
+          body: "The oscillation frequency is sustained at 28,800 vibrations per hour. Four adjustable eccentric gold weights seated along the rim allow micrometric regulation without touching the active length of the balance spring.",
+          m1: "28,800", l1: "Oscillations / Hr",
+          m2: "±0.001mm", l2: "Poise Accuracy",
+          m3: "300°", l3: "Optimal Amplitude"
+        },
+        {
+          cadId: "CAD_ID: WM-ESC-SILIC-02",
+          tag: "MODULE 02 TELEMETRY",
+          headline: "Monocrystalline Silicon Escapement Wheel",
+          body: "Produced through Deep Reactive Ion Etching (DRIE) with atomic-level edge tolerances. Completely impervious to magnetism up to 15,000 Gauss and operates with exceptional kinetic transfer efficiency.",
+          m1: "15,000 G", l1: "Anti-Magnetic Rating",
+          m2: "0.02 µk", l2: "Coefficient Friction",
+          m3: "0 µL", l3: "Lubricant Needed"
+        },
+        {
+          cadId: "CAD_ID: WM-PWR-TWIN-03",
+          tag: "MODULE 03 TELEMETRY",
+          headline: "Twin Series Co-Axial Spring Barrels",
+          body: "By linking two barrels in series rather than parallel, spring unwinding tension is divided evenly, preventing isochronism drop as the 72-hour reserve approaches exhaustion.",
+          m1: "72 Hours", l1: "Autonomous Reserve",
+          m2: "Nivaflex NM", l2: "Spring Alloy",
+          m3: "100%", l3: "Linear Torque"
+        },
+        {
+          cadId: "CAD_ID: WM-OPT-BOX-04",
+          tag: "MODULE 04 TELEMETRY",
+          headline: "Box Profile Cambered Corundum Crystal",
+          body: "Milled from single-crystal synthetic boules over 60 hours using diamond cutting tools. Features seven layers of anti-reflective coating vaporized in vacuum chambers.",
+          m1: "1800 HV", l1: "Vickers Hardness",
+          m2: "99.8%", l2: "Optical Clarity",
+          m3: "7-Layer", l3: "Vacuum AR Multi-Coat"
+        }
+      ];
+
+      const moduleCards = document.querySelectorAll('.module-card');
+      const cadCode = document.getElementById('cadCode');
+      const inspectTag = document.getElementById('inspectTag');
+      const inspectHeadline = document.getElementById('inspectHeadline');
+      const inspectBody = document.getElementById('inspectBody');
+      const metric1 = document.getElementById('metric1');
+      const metricLbl1 = document.getElementById('metricLbl1');
+      const metric2 = document.getElementById('metric2');
+      const metricLbl2 = document.getElementById('metricLbl2');
+      const metric3 = document.getElementById('metric3');
+      const metricLbl3 = document.getElementById('metricLbl3');
+
+      moduleCards.forEach(card => {
+        card.addEventListener('click', () => {
+          moduleCards.forEach(c => c.classList.remove('is-active'));
+          card.classList.add('is-active');
+          const modIdx = parseInt(card.dataset.module);
+          const data = moduleData[modIdx];
+          if (!data) return;
+
+          cadCode.textContent = data.cadId;
+          inspectTag.textContent = data.tag;
+          inspectHeadline.textContent = data.headline;
+          inspectBody.textContent = data.body;
+          metric1.textContent = data.m1;
+          metricLbl1.textContent = data.l1;
+          metric2.textContent = data.m2;
+          metricLbl2.textContent = data.l2;
+          metric3.textContent = data.m3;
+          metricLbl3.textContent = data.l3;
+        });
+      });
+
+      // 6. ATELIER FINISHING TECHNIQUE SELECTOR (DYNAMIC IMAGE & ARTISAN SWITCHER)
+      const finishData = {
+        anglage: {
+          code: "TECHNIQUE 01 / 04",
+          tag: "CHAMFERING & CONVEX RADII",
+          title: "Anglage à la Main (Hand Chamfering)",
+          desc: "The edges of each bridge are hand-filed to a precise 45-degree angle, followed by progressive smoothing with emery paper and polishing with wood sticks soaked in diamond paste to achieve a flawless mirror curve with sharp interior angles.",
+          m1: "42 Hours", l1: "Hand-Labor Per Movement",
+          m2: "Gentian Wood", l2: "Finishing Medium",
+          m3: "±0.001 mm", l3: "Reflection Tolerance",
+          img: "assets/finish_anglage.jpg",
+          bench: "BENCH 01 · ANGLAGE ÉTABLI",
+          artisan: "M. Laurent Gauthier",
+          role: "Maître Horloger · Anglage à la Main",
+          seal: "POINÇON DE GENÈVE",
+          spec1: "SPECIALTY: 45° INTERNAL CHAMFERS",
+          spec2: "TOLERANCE: ±0.001 MM"
+        },
+        polinoir: {
+          code: "TECHNIQUE 02 / 04",
+          tag: "SPECULAR OPTICAL FINISH",
+          title: "Poli Noir (Specular Black Mirror Polish)",
+          desc: "Applied to steel screws, tourbillon bridges, and hammer surfaces using a zinc plate and fine diamond compound. When viewed from direct front, the surface reflects pure optical light; tilted slightly, it turns jet obsidian black.",
+          m1: "28 Hours", l1: "Hand-Labor Per Movement",
+          m2: "Zinc Plate & Paste", l2: "Finishing Medium",
+          m3: "Optical Flat", l3: "Specular Dispersion",
+          img: "assets/finish_polinoir.jpg",
+          bench: "BENCH 02 · POLI NOIR PLATE",
+          artisan: "M. François V.",
+          role: "Spécialiste Poli Noir · Zinc Specular Lapping",
+          seal: "HAUTE PRÉCISION",
+          spec1: "SURFACE: OBSIDIAN BLACK POLISH",
+          spec2: "TOLERANCE: ZERO SPECULAR DISTORTION"
+        },
+        cotes: {
+          code: "TECHNIQUE 03 / 04",
+          tag: "LIGHT REFRACTIVE HORIZON",
+          title: "Côtes de Genève Rayonnantes (Geneva Waves)",
+          desc: "Parallel linear or radiant wave patterns created using a rotating boxwood peg dressed with diamond paste, generating dimensional ribbing that refracts light with holographic depth.",
+          m1: "16 Hours", l1: "Hand-Labor Per Movement",
+          m2: "Boxwood Disc", l2: "Finishing Medium",
+          m3: "1.2 mm Rib", l3: "Pitch Parallelism",
+          img: "assets/finish_cotes.jpg",
+          bench: "BENCH 03 · CÔTES RAYONNANTES",
+          artisan: "Mme. Hélène B.",
+          role: "Décoratrice Mouvement · Côtes de Genève",
+          seal: "VAL-DE-TRAVERS",
+          spec1: "PATTERNING: PARALLEL WAVE RIBBING",
+          spec2: "TOLERANCE: 1.2 MM PITCH SYMMETRY"
+        },
+        perlage: {
+          code: "TECHNIQUE 04 / 04",
+          tag: "OIL RETENTION TEXTURE",
+          title: "Perlage & Circular Graining",
+          desc: "Overlapping circular cloud motifs applied by hand across the mainplate with a rubberized abrasive rod, creating anti-reflective textural micro-geometry that retains minute oil reserves.",
+          m1: "20 Hours", l1: "Hand-Labor Per Movement",
+          m2: "Abrasive Dowel", l2: "Finishing Medium",
+          m3: "0.8 mm Circles", l3: "Overlap Symmetry",
+          img: "assets/finish_perlage.jpg",
+          bench: "BENCH 04 · PERLAGE CLOUD RIG",
+          artisan: "M. Antoine D.",
+          role: "Artisan Perleur · Circular Cloud Graining",
+          seal: "LE BRASSUS CERTIFIED",
+          spec1: "TEXTURE: RADIAL PEARLED CLOUDS",
+          spec2: "TOLERANCE: 0.8 MM CONCENTRIC OVERLAP"
+        }
+      };
+
+      const finishBtns = document.querySelectorAll('.finish-btn');
+      const finishCode = document.getElementById('finishCode');
+      const finishTag = document.getElementById('finishTag');
+      const finishTitle = document.getElementById('finishTitle');
+      const finishDesc = document.getElementById('finishDesc');
+      const finishMetric1 = document.getElementById('finishMetric1');
+      const finishMetricLbl1 = document.getElementById('finishMetricLbl1');
+      const finishMetric2 = document.getElementById('finishMetric2');
+      const finishMetricLbl2 = document.getElementById('finishMetricLbl2');
+      const finishMetric3 = document.getElementById('finishMetric3');
+      const finishMetricLbl3 = document.getElementById('finishMetricLbl3');
+
+      const atelierMainImg = document.getElementById('atelierMainImg');
+      const atelierBenchName = document.getElementById('atelierBenchName');
+      const artisanName = document.getElementById('artisanName');
+      const artisanRole = document.getElementById('artisanRole');
+      const artisanSeal = document.getElementById('artisanSeal');
+      const artisanSpec1 = document.getElementById('artisanSpec1');
+      const artisanSpec2 = document.getElementById('artisanSpec2');
+
+      finishBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          finishBtns.forEach(b => b.classList.remove('is-active'));
+          btn.classList.add('is-active');
+          const key = btn.dataset.finish;
+          const data = finishData[key];
+          if (!data) return;
+
+          if (finishCode) finishCode.textContent = data.code;
+          if (finishTag) finishTag.textContent = data.tag;
+          if (finishTitle) finishTitle.textContent = data.title;
+          if (finishDesc) finishDesc.textContent = data.desc;
+          if (finishMetric1) finishMetric1.textContent = data.m1;
+          if (finishMetricLbl1) finishMetricLbl1.textContent = data.l1;
+          if (finishMetric2) finishMetric2.textContent = data.m2;
+          if (finishMetricLbl2) finishMetricLbl2.textContent = data.l2;
+          if (finishMetric3) finishMetric3.textContent = data.m3;
+          if (finishMetricLbl3) finishMetricLbl3.textContent = data.l3;
+
+          // Smooth image cross-fade
+          if (atelierMainImg && data.img) {
+            atelierMainImg.style.opacity = '0';
+            setTimeout(() => {
+              atelierMainImg.src = data.img;
+              atelierMainImg.onload = () => {
+                atelierMainImg.style.opacity = '1';
+              };
+            }, 180);
+          }
+
+          // Telemetry and artisan updates
+          if (atelierBenchName) atelierBenchName.textContent = data.bench;
+          if (artisanName) artisanName.textContent = data.artisan;
+          if (artisanRole) artisanRole.textContent = data.role;
+          if (artisanSeal) artisanSeal.textContent = data.seal;
+          if (artisanSpec1) artisanSpec1.textContent = data.spec1;
+          if (artisanSpec2) artisanSpec2.textContent = data.spec2;
+        });
+      });
+
+      // 7. BESPOKE TIMEPIECE CONFIGURATOR
+      let configState = {
+        metal: "honeygold",
+        metalPrice: 94000,
+        metalWeight: 164,
+        metalLabel: "18K Honeygold",
+        dial: "meteorite",
+        dialPrice: 12000,
+        dialLabel: "Celestial Meteorite",
+        dialImg: "assets/calibre_celestial.jpg",
+        strap: "alligator",
+        strapPrice: 0,
+        strapLabel: "Alligator Leather"
+      };
+
+      const configOptBtns = document.querySelectorAll('.config-opt-btn');
+      const configWatchImg = document.getElementById('configWatchImg');
+      const liveMetalPill = document.getElementById('liveMetalPill');
+      const liveDialPill = document.getElementById('liveDialPill');
+      const liveStrapPill = document.getElementById('liveStrapPill');
+      const configWeight = document.getElementById('configWeight');
+      const configTotalPrice = document.getElementById('configTotalPrice');
+      const calibreSelection = document.getElementById('calibreSelection');
+
+      const updateConfigSummary = () => {
+        const total = configState.metalPrice + configState.dialPrice + configState.strapPrice;
+        configTotalPrice.textContent = `CHF ${total.toLocaleString()}`;
+        configWeight.textContent = `${configState.metalWeight} g`;
+        liveMetalPill.textContent = configState.metalLabel;
+        liveDialPill.textContent = configState.dialLabel;
+        liveStrapPill.textContent = configState.strapLabel;
+      };
+
+      configOptBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const type = btn.dataset.type;
+          document.querySelectorAll(`.config-opt-btn[data-type="${type}"]`).forEach(b => b.classList.remove('is-selected'));
+          btn.classList.add('is-selected');
+
+          if (type === 'metal') {
+            configState.metal = btn.dataset.val;
+            configState.metalPrice = parseInt(btn.dataset.price);
+            configState.metalWeight = parseInt(btn.dataset.weight);
+            configState.metalLabel = btn.querySelector('.opt-title').textContent;
+          } else if (type === 'dial') {
+            configState.dial = btn.dataset.val;
+            configState.dialPrice = parseInt(btn.dataset.price);
+            configState.dialLabel = btn.querySelector('.opt-title').textContent;
+            if (btn.dataset.img) {
+              configWatchImg.style.opacity = '0.3';
+              setTimeout(() => {
+                configWatchImg.src = btn.dataset.img;
+                configWatchImg.style.opacity = '1';
+              }, 150);
+            }
+          } else if (type === 'strap') {
+            configState.strap = btn.dataset.val;
+            configState.strapPrice = parseInt(btn.dataset.price);
+            configState.strapLabel = btn.querySelector('.opt-title').textContent;
+          }
+
+          updateConfigSummary();
+        });
+      });
+
+      // 8. CONCIERGE FORM & MODAL
+      const conciergeForm = document.getElementById('conciergeForm');
+      const allocationModal = document.getElementById('allocationModal');
+      const closeModalBtn = document.getElementById('closeModalBtn');
+      const modalConfirmationMsg = document.getElementById('modalConfirmationMsg');
+      const dossierCode = document.getElementById('dossierCode');
+
+      if (conciergeForm) {
+        conciergeForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const clientName = document.getElementById('clientName').value;
+          const randomCode = 'WM-2026-' + Math.floor(1000 + Math.random() * 9000) + '-CH';
+          dossierCode.textContent = `DOSSIER REF: ${randomCode}`;
+          modalConfirmationMsg.innerHTML = `Thank you, <strong>${clientName}</strong>. Your acquisition dossier has been assigned directly to our Salon Director. A private liaison will contact you within 4 hours to review allocations and arrange your private viewing.`;
+          allocationModal.classList.add('is-active');
+        });
+      }
+
+      if (closeModalBtn) {
+        closeModalBtn.addEventListener('click', () => {
+          allocationModal.classList.remove('is-active');
+        });
+      }
+      allocationModal.addEventListener('click', (e) => {
+        if (e.target === allocationModal) allocationModal.classList.remove('is-active');
+      });
+
+      // 9. LIVE WORLD CLOCKS (Synchronized Horology)
+      const clockGeneva = document.getElementById('clockGeneva');
+      const clockLondon = document.getElementById('clockLondon');
+      const clockNewYork = document.getElementById('clockNewYork');
+      const clockTokyo = document.getElementById('clockTokyo');
+
+      const updateWorldClocks = () => {
+        const now = new Date();
+        const getCityTime = (timeZone) => {
+          return new Intl.DateTimeFormat('en-GB', {
+            timeZone,
+            hour: '2-digit',
+            minute: '2-digit',
+            second: '2-digit',
+            hour12: false
+          }).format(now);
+        };
+
+        if (clockGeneva) clockGeneva.textContent = `${getCityTime('Europe/Zurich')} CET`;
+        if (clockLondon) clockLondon.textContent = `${getCityTime('Europe/London')} GMT`;
+        if (clockNewYork) clockNewYork.textContent = `${getCityTime('America/New_York')} EST`;
+        if (clockTokyo) clockTokyo.textContent = `${getCityTime('Asia/Tokyo')} JST`;
+      };
+
+      updateWorldClocks();
+      setInterval(updateWorldClocks, 1000);
+
+      // 10. SCROLL REVEAL OBSERVER
+      const revealElements = document.querySelectorAll('.reveal-on-scroll');
+      if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-revealed');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.12 });
+
+        revealElements.forEach(el => observer.observe(el));
+      } else {
+        revealElements.forEach(el => el.classList.add('is-revealed'));
+      }
+    });
+  </script>
+
+</body>
+</html>
